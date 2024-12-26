@@ -1,22 +1,41 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Questions } from '../data/question'
 
 const TestSelection = ({onselectCategory}) => {
+    const navigate=useNavigate()
     // hardcoded values to test
     // let categories=['HTML','CSS','BootStrap','JavaScript']
+
     // accessing the values dynamically
     let categories = Object.keys(Questions)
     
   return (
-    <div className='container'>
-        <h2 className='text-center '>Take the Test to Ace Interviews</h2>
+    <div className='container py-4'>
+        <h2 className='text-center mb-4'>Take the Test to Ace Interviews</h2>
         <div className='card p-4 shadow'>
-            <div className="d-flex justify-content-center">
+            <div className="row gy-3 ">
                 {
                     categories.map((sub)=>(
-                        <button key={sub} className='btn btn-success mx-2' onClick={()=>onselectCategory(sub)}>{sub}</button>
+                        <div className='col-12 col-md-6 col-lg-3 text-center' key={sub}>
+                            <button 
+                            className='btn btn-success w-100' 
+                            onClick={()=>onselectCategory(sub)}
+                            >
+                                {sub}
+                            </button>
+                        </div>
                     ))
                 }
+                {/* "Go to Home" Button */}
+                <div className="text-center mb-4">
+                    <button
+                        className="btn btn-outline-primary"
+                        onClick={() => navigate('/')}
+                    >
+                        Go to Home
+                    </button>
+                </div>
             </div>
         </div>
     </div>
