@@ -12,8 +12,8 @@ const Home = () => {
           <p className="lead mt-3">
             Explore endless opportunities and elevate your skills with "For Fresher." Whether you're looking for the best jobs, learning resources, or career guidance, we've got you covered.
           </p>
-          <div className="mt-4">
-            <NavLink to="/jobseekers" className="btn btn-primary btn-lg mx-2">
+          <div className="mt-4 flex-sm-row">
+            <NavLink to="/jobseekers" className="btn btn-primary btn-lg mx-2 mb-3 mb-sm-0">
               Explore Jobs
             </NavLink>
             <NavLink to="/resources" className="btn btn-outline-primary btn-lg mx-2">
