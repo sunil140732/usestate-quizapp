@@ -26,15 +26,16 @@ const Home = () => {
       {/* image section */}
       <section className="container image-section  my-5">
         <div className="py-5">
-        <img src="http://surl.li/esbjsw" alt="For Fresher" className="w-100" />
+          <img src="http://surl.li/esbjsw" alt="For Fresher" className="w-100" />
         </div>
       </section>
-
+      
+      {/* companie section */}
       <div className="bg-dark text-white py-5">
-        <p className="d-flex justify-content-center display-4 fw-bold py-5">
+        <p className="d-flex justify-content-center display-4 fw-bold py-5 text-center">
           Join 1,000+ companies who hire with Fresher
         </p>
-        <div className="d-flex justify-content-center mx-auto">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 justify-content-center mx-auto">
           <div className="company-logo text-center p-5">
             <img
               src="http://surl.li/swjwep"

@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           {/* Column 1: About Us */}
-          <div className="col-md-4 mb-4">
-            <h5>About For Fresher</h5>
+          <div className="col-md-4 mb-4 text-center">
+            <h5 >About For Fresher</h5>
             <p>
               We provide the best in fashion with a focus on quality and style. Join us for the latest trends and timeless designs.
             </p>
